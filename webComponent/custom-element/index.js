@@ -37,6 +37,9 @@ class PopUpInfo extends HTMLElement {
   disconnectCallback() {
     console.log('disconnected');
   }
+  adoptedCallback() {
+    console.log('adopted');
+  }
   attributeChangedCallback(name, oldValue, newValue) {
     console.log({ name, oldValue, newValue });
   }
