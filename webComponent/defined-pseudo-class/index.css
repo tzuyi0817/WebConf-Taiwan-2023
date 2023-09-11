@@ -1,0 +1,19 @@
+p {
+  background: yellow;
+}
+
+:defined {
+  font-style: italic;
+}
+
+simple-custom {
+  background: cyan;
+}
+
+simple-custom:defined {
+  display: block;
+}
+
+simple-custom:not(:defined) {
+  display: none;
+}
