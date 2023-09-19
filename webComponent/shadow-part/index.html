@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow part</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <tabbed-custom-element></tabbed-custom-element>
+
+    <template id="tabbed-custom-element">
+      <style type="text/css">
+        *, ::after, ::before {
+          box-sizing: border-box;
+          padding: 1rem;
+        }
+        :host {
+          display: flex;
+        }
+      </style>
+      <div part="tab active">Tab 1</div>
+      <div part="tab">Tab 2</div>
+      <div part="tab">Tab 3</div>
+    </template>
+  </body>
+</html>
